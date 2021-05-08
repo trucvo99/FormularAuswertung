@@ -1,0 +1,110 @@
+<!---------------- Truc Vo ---------------->
+<!--------- Matrikelnummer: 2575005 --------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrieren</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+    <style>
+        
+        div {
+            width: 400px;
+            height: 320px;
+            border: 1px;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 410px;
+            margin-top: 0px;
+            background-color: plum;
+            position: relative;
+        }
+    
+        header {
+            color: #868787;
+            font-family: sans-serif;
+            font-size: 50px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        input {
+            width: 250px;
+            height: 30px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border: 1px solid grey;
+            text-align: center;
+        }
+
+        button {
+            width: 205px;
+            height: 40px;
+            margin-top: 50px;
+            border-radius: 5px;
+            border:none;
+            background-color: purple;
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    
+        button:hover {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        p {
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        label {
+            font-weight: Bolder;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        ::placeholder {
+            font-style: italic;
+        }
+        
+        a {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        i {
+                color: violet;
+            }
+
+    </style>
+    </head>
+    <body>
+        <form action="/registrierenInfo" method="POST">
+            <header>REGISTRIEREN</header>
+            <br><br>
+            <div>
+                <!-- <label for="registriername">Benutzername</label> --->
+                <input type="text" name="registriername" placeholder="Benutzername"> <br>
+
+                <!-- <label for="registrierpass">Passwort</label> ---> 
+                <input type="password" name="registrierpass" placeholder="Passwort erstellen">
+                <p>*Das Passwort muss 5-15 Zeichen, mindestens einen Kleinbuchstabe,
+                mindestens einen Großbuchstabe, mindestens eine Nummer
+                und mindestens Sonderzeichen erhalten. Zum Beispiel: J@v@&2304!*</p>
+
+                <!-- <label for="passWiederholen">Passwort bestätigen</label> --> 
+                <input type="password" name="passWiederholen" placeholder="Passwort wiederholen"><br>
+                <button type="submit">Registrieren</button> <br>
+
+            </div>
+            
+        </form>
+
+        <p><a href="/login">Zurück zur Login-Seite</a><i class="material-icons">exit_to_app</i></p>
+    </body>
+</html>
